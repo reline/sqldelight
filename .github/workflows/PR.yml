@@ -43,7 +43,7 @@ jobs:
         run: ./gradlew build --stacktrace
       - name: Run windows tests
         if: matrix.os == 'windows-latest'
-        run: ./gradlew mingwTest --stacktrace
+        run: ./gradlew mingwTest sqldelight-idea-plugin:check --stacktrace
       - name: Run instrumentation tests
         if: matrix.job == 'instrumentation'
         uses: reactivecircus/android-emulator-runner@v2
