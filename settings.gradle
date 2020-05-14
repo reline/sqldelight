@@ -12,8 +12,9 @@ include ':extensions:rxjava2-extensions'
 include ':runtime'
 
 //Removed until build is split
-//include ':sample:android'
-//include ':sample:common'
+include ':sample:android'
+include ':sample:common'
+include ':sample:jvmApp'
 
 //Removed because of JS issue
 //include ':sample:web'
